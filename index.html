@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armazem Verde</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://static.wixstatic.com/media/a9c805_961690c7c2594f6581eeac01e708d40f~mv2.jpg/v1/fill/w_226,h_160,al_c,q_80,usm_0.66_1.00_0.01/Armaze%CC%81m%20verde%20-%20Logotipo_P%C3%A1gina_1.webp"
+            alt="Armazem Verde"
+          />
+        </a>
+      </div>
+      <div class="itens-cabelho">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li>
+              <a href="#">Mais</a>
+              <ul>
+                <li><a href="#">Conheça a equipe</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Políticas da loja</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Perguntas Frequentes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <span class="numero">(48) 3466-1774</span>
+
+        <div class="icons">
+          <a href="#"><i class="fab fa-instagram icon-menu"></i></a>
+          <a href="#"><i class="fab fa-facebook-f icon-menu"></i> </a>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+        <button class="button">Localização</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-banner">
+        <img src="" alt="" class="img-banner" />
+
+        <div class="banner-button">
+          <div class="button-banner" onclick="trocaFoto(0)" id="bt-foto0"></div>
+          <div class="button-banner" onclick="trocaFoto(1)" id="bt-foto1"></div>
+          <div class="button-banner" onclick="trocaFoto(2)" id="bt-foto2"></div>
+        </div>
+      </section>
+
+      <section class="section-info">
+        <div class="info">
+          <h1 class="title">Experimente o Armazém Verde</h1>
+          <p>
+            Armazém Verde tem sido um ponto de interesse de Orleans desde 2015.
+            Desde então, fornecemos produtos alimentares de excelente qualidade
+            a ótimos preços. Hoje, o Armazém Verde não só serve a comunidade
+            local mas também facilita seus produtos a outras áreas.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-itens">
+        <div class="grupo-itens">
+          <div class="arrow-left">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <p class="visual">Visualização Rapida</p>
+            </div>
+            <p class="description">Sou um produto</p>
+            <p>R$ 45.00</p>
+          </div>
+          <div class="arrow-right">
+            <i class="fas fa-arrow-right fa-2x"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-product">
+        <h1>Produtos</h1>
+
+        <div class="products">
+          <div class="image">
+            <img src="./img/product.webp" alt="image" />
+          </div>
+          <div class="info-product">
+            <h2>Sanduíches artesanais</h2>
+            <p>A partir de R$ 20</p>
+            <button class="button">Saiba mais</button>
+          </div>
+        </div>
+
+        <div class="products img-2">
+          <div class="image">
+            <img src="./img/product-2.webp" alt="image" />
+          </div>
+          <div class="info-product">
+            <h2>Sanduíches artesanais</h2>
+            <p>A partir de R$ 20</p>
+            <button class="button">Saiba mais</button>
+          </div>
+        </div>
+
+        <div class="products img-3">
+          <div class="image">
+            <img src="./img/product-3.webp" alt="image" />
+          </div>
+          <div class="info-product">
+            <h2>Sanduíches artesanais</h2>
+            <p>A partir de R$ 20</p>
+            <button class="button">Saiba mais</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-localizacao">
+        <div>
+          <p>
+            Venha à nossa Loja de alimentos naturais para descobrir a nossa gama
+            de produtos deliciosos.
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button">Localização</button>
+          <button class="button-green">Contato</button>
+        </div>
+      </section>
+
+      <section class="section-sobre">
+        <div class="area-sobre">
+          <div class="text-sobre">
+            <h1>Sobre</h1>
+            <p>
+              Desde que abrimos nossas portas, o(a) Armazém Verde se tornou
+              parte integrante da comunidade local. Tudo começou em 2015 depois
+              de percebermos que nem sempre é fácil conseguir comida fresca,
+              local, saudável e da mais alta qualidade em Orleans.
+            </p>
+            <p>
+              Nosso constante esforço visa criar fortes laços com nossos
+              fornecedores, o que nos ajuda a manter nossos custos baixos,
+              tornando sua experiência conosco muito acessível também. Venha
+              explorar o(a) nosso(a) popular Loja de alimentos naturais hoje
+              mesmo e viva um momento prazeroso e delicioso.
+            </p>
+            <button class="button">Entre em contato</button>
+          </div>
+        </div>
+        <div>
+          <img src="/img/img-sobre.webp" alt="imagem" />
+        </div>
+      </section>
+
+      <section class="section-horario">
+        <div class="horario">
+          <h1>Hórario</h1>
+          <span>Venha nos visitar</span>
+          <span>Seg - Sex: 8:00 - 18:30</span>
+        </div>
+      </section>
+
+      <section class="section-form">
+        <div class="contato">
+          <h1>Contato</h1>
+
+          <span
+            >R. Aristiliano Ramos, 380 - Centro, Orleans - SC, 88870-000</span
+          >
+
+          <span>(48) 3466-1774</span>
+
+          <div class="contato-icon">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="form">
+          <form action="" class="form-contact">
+            <div class="name">
+              <input class="input" type="text" name="name" placeholder="Nome" />
+            </div>
+            <div class="email">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="tel">
+              <input
+                class="input"
+                type="tel"
+                name="telefone"
+                placeholder="Telefone"
+              />
+            </div>
+            <div class="endereco">
+              <input
+                class="input"
+                type="text"
+                name="endereco"
+                placeholder="Endereço"
+              />
+            </div>
+            <div class="assunto">
+              <input
+                class="input_assunto"
+                type="text"
+                name="assunto"
+                placeholder="Assunto"
+              />
+            </div>
+            <div class="text-area">
+              <textarea
+                class="textarea"
+                name="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Digite sua mensagem aqui"
+              ></textarea>
+            </div>
+            <div class="submit">
+              <input class="input_submit" type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-footer">
+        <h1 class="h1-footer">Formulário de Inscrição</h1>
+        <form action="">
+          <input
+            class="input-footer email-footer"
+            type="email"
+            name="email"
+            placeholder="Endereço de Email"
+          />
+          <input
+            class="input-footer enviar-footer"
+            type="submit"
+            name="submit"
+            value="Enviar"
+          />
+        </form>
+        <span class="tel-footer">(48) 3466-1774</span>
+        <span class="info-footer"
+          >©2021 por Armazém Verde. Orgulhosamente criado com Wix.com</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

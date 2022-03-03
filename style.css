@@ -1,0 +1,598 @@
+/*Global =====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header =====================================*/
+.cabecalho {
+  height: 220px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itens-cabelho {
+  width: 650px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
+
+  margin-right: 10px;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 20px;
+  display: none;
+  background-color: white;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
+
+.menu li ul li {
+  display: block;
+  width: 150px;
+  padding: 5px 10px;
+}
+
+.numero {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.icons {
+  margin-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons a {
+  margin-right: 10px;
+}
+
+.icon-menu {
+  color: black;
+}
+
+.fa-shopping-cart {
+  color: black;
+}
+
+.button {
+  height: 40px;
+  width: 115px;
+
+  background-color: white;
+  border: 1px solid rgb(0, 129, 0);
+  color: rgb(1, 121, 1);
+}
+
+.button:hover {
+  background-color: rgb(0, 129, 0);
+  color: white;
+  cursor: pointer;
+}
+
+/*Banner =====================================*/
+.section-banner {
+  height: calc(100vh - 220px);
+  width: 100%;
+  position: relative;
+}
+.img-banner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-button {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.button-banner {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgba(53, 52, 52, 0.644);
+  cursor: pointer;
+}
+
+/*Info =====================================*/
+.section-info {
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  height: 50%;
+  width: 46%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 80px;
+  color: rgb(0, 129, 0);
+
+  margin-bottom: 30px;
+}
+
+.info p {
+  line-height: 2;
+  font-weight: 500;
+}
+
+/*Itens =====================================*/
+.section-itens {
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-itens {
+  width: 100%;
+  height: 270px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow-left {
+  height: 100%;
+  width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.card {
+  height: 100%;
+  width: 270px;
+
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.icon {
+  width: 100%;
+  height: 75%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.visual {
+  margin-top: 80px;
+  font-size: 20px;
+
+  display: none;
+}
+
+.description {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.arrow-right {
+  height: 100%;
+  width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/*Produtos =====================================*/
+.section-product {
+  height: 1800px;
+  text-align: center;
+}
+
+.section-product h1 {
+  color: rgb(0, 129, 0);
+  font-size: 40px;
+}
+
+.products {
+  height: 525px;
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 80px;
+
+  display: flex;
+}
+
+.img-2 {
+  margin-top: 1px;
+}
+
+.img-3 {
+  margin-top: 1px;
+}
+
+.products .image {
+  margin-top: 30px;
+}
+
+.products .info-product {
+  margin: auto;
+}
+
+.info-product h2 {
+  color: #547940;
+  margin-bottom: 30px;
+}
+
+.info-product p {
+  margin-bottom: 50px;
+  font-size: 17px;
+}
+
+/*Localizacao =====================================*/
+.section-localizacao {
+  height: 350px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.button-green {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(0, 129, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  margin-left: 10px;
+}
+
+/*Sobre =====================================*/
+.section-sobre {
+  width: 100%;
+  height: 740px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.area-sobre {
+  height: 780px;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.text-sobre {
+  height: 450px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text-sobre h1 {
+  color: rgb(0, 129, 0);
+
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.text-sobre p {
+  text-align: justify;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 300;
+
+  margin-top: 30px;
+}
+
+.text-sobre button {
+  height: 40px;
+  width: 150px;
+  margin-top: 40px;
+}
+
+/*Horario =====================================*/
+.section-horario {
+  background-image: url(/img/img-horario.webp);
+  width: 100%;
+  height: 480px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horario {
+  height: 400px;
+  width: 450px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horario h1 {
+  margin-bottom: 50px;
+}
+
+.horario span {
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+/*Form =====================================*/
+.section-form {
+  width: 100%;
+  height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #547940;
+}
+
+.contato {
+  height: 400px;
+  width: 450px;
+  color: white;
+
+  margin-left: 480px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contato h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contato span {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.contato-icon {
+  width: 200px;
+}
+
+.contato-icon a {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.form {
+  height: 100%;
+  width: 50%;
+}
+
+.form-contact {
+  width: 500px;
+  height: 400px;
+
+  margin-left: 20px;
+  margin-top: 100px;
+
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "tel endereco"
+    "assunto assunto"
+    "text-area text-area"
+    "submit submit";
+}
+
+.input {
+  height: 40px;
+  width: 95%;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.textarea {
+  width: 98%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid white;
+}
+
+.input_submit {
+  background-color: white;
+  height: 40px;
+  width: 97%;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.tel {
+  grid-area: tel;
+}
+
+.endereco {
+  grid-area: endereco;
+}
+
+.assunto {
+  grid-area: assunto;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input_assunto {
+  width: 97.2%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.input_assunto::placeholder {
+  color: #fff;
+}
+.text-area {
+  grid-area: text-area;
+  width: 100%;
+}
+
+.textarea::placeholder {
+  color: #fff;
+}
+
+.submit {
+  grid-area: submit;
+  width: 100%;
+}
+
+.input_submit {
+  width: 98%;
+}
+
+/*Footer =====================================*/
+.footer {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-footer {
+  height: 350px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-footer form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.h1-footer {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+}
+
+.input-footer {
+  width: 100%;
+  padding: 10px;
+}
+
+.email-footer {
+  border: none;
+  border-bottom: solid 1px black;
+}
+
+.enviar-footer {
+  background-color: black;
+  color: white;
+  font-size: 12pt;
+  border: none;
+
+  margin-top: 5px;
+}
+
+.tel-footer {
+  margin-top: 50px;
+}
+
+.info-footer {
+  margin-top: 60px;
+}
